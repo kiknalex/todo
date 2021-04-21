@@ -15,12 +15,14 @@ const MainContent = () => {
         const list = JSON.parse(localStorage.getItem("todoList"));
         if(list !== undefined && list !== null) {
             setTodoList(list)
+            console.log("first render: list", list)
         }
         
     },[])
     useEffect(() => {
         if(todoList !== undefined)
         localStorage.setItem("todoList", JSON.stringify(todoList))
+        console.log("localStorageSave:", localStorage.getItem(JSON.stringify(todoList)))
     },[todoList,rerender])
     return (
         <div className="main-content">

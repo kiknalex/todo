@@ -2,7 +2,8 @@ import React from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import Todo from "./Todo";
 import TodosInfo from "./TodosInfo";
-const Todos = ({ todoList, setTodoList, sortTodos, rerender, setRerender }) => {
+const Todos = ({ todoList=[], setTodoList, sortTodos, rerender, setRerender }) => {
+    
   const handleOnDragEnd = (result) => {
     if (!result.destination) return;
     const items = todoList;
