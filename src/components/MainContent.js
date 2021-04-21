@@ -19,8 +19,8 @@ const MainContent = () => {
         
     },[])
     useEffect(() => {
+        if(todoList !== undefined)
         localStorage.setItem("todoList", JSON.stringify(todoList))
-        
     },[todoList,rerender])
     return (
         <div className="main-content">
