@@ -13,7 +13,7 @@ const MainContent = () => {
     const [rerender, setRerender] = useState(false);
     useEffect(() => {
         const list = JSON.parse(localStorage.getItem("todoList"));
-        if(list !== undefined) {
+        if(list !== undefined && list !== null) {
             setTodoList(list)
         }
     },[])
