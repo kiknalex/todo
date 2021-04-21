@@ -19,6 +19,7 @@ const NewTodo = ({todoList,setTodoList}) => {
         });
         setTodoList([...todos]);
         setTodoInput("");
+        
     }
     return (
         <div className="new-todo-container">

@@ -3,7 +3,6 @@ import TodoDisplayChange from './TodoDisplayChange'
 import NewTodo from './NewTodo'
 import Todos from './Todos'
 const MainContent = () => {
-    console.log("123")
     const [todoList, setTodoList] = useState([
     {
     'todoText': "Add your first todo",
@@ -18,13 +17,14 @@ const MainContent = () => {
             setTodoList(list)
             console.log("first render: list", list)
         }
-        
     },[])
     useEffect(() => {
         if(todoList !== undefined)
         localStorage.setItem("todoList", JSON.stringify(todoList))
+        if(todoList === undefined)
+        localStorage.clear();
         
-    },[todoList,rerender])
+    },[rerender])
     return (
         <div className="main-content">
             <NewTodo
