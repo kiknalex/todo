@@ -10,6 +10,7 @@ const Todos = ({ todoList, setTodoList, sortTodos, rerender, setRerender }) => {
     items.splice(result.destination.index, 0, reorderedItem);
     setTodoList(items);
     setRerender(!rerender);
+    
   };
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -20,7 +21,7 @@ const Todos = ({ todoList, setTodoList, sortTodos, rerender, setRerender }) => {
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
-            {todoList.map((todo, index) => {
+            {todoList.length > 0 ? todoList.map((todo, index) => {
               return (
                 <Draggable key={todo.id} draggableId={todo.id} index={index}>
                   {(provided) => (
@@ -39,8 +40,8 @@ const Todos = ({ todoList, setTodoList, sortTodos, rerender, setRerender }) => {
                     </div>
                   )}
                 </Draggable>
-              );
-            })}
+              ); 
+            }) : <div></div>}
             {provided.placeholder}
             <TodosInfo todoList={todoList} setTodoList={setTodoList} />
           </div>
