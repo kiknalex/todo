@@ -27,11 +27,11 @@
   --very-dark-grayish-blue-darker: hsl(237, 14%, 26%);
 
   /* background images */
-  --bg-desktop-light: url("./public/bg-desktop-light.jpg");
-  --bg-mobile-light: url("./public/bg-mobile-light.jpg");
+  --bg-desktop-light: url("/bg-desktop-light.jpg");
+  --bg-mobile-light: url("/bg-mobile-light.jpg");
 
-  --bg-desktop-dark: url("public/bg-desktop-dark.jpg");
-  --bg-mobile-dark: url("public/bg-mobile-dark.jpg");
+  --bg-desktop-dark: url("/bg-desktop-dark.jpg");
+  --bg-mobile-dark: url("/bg-mobile-dark.jpg");
 }
 
 :root .light-theme {
