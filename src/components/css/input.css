@@ -1,0 +1,16 @@
+.todo-input {
+    all: unset;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+    caret-color: var(--bright-blue);
+}
+
+.input-container {
+    margin-bottom: 40px;
+}
+
+.todos-create {
+    padding-block: 10px;
+}

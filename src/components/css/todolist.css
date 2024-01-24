@@ -1,0 +1,27 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item {
+    align-items: center;
+    border-bottom: 1px solid var(--very-dark-grayish-blue-darker);
+}
+
+.items-left {
+    display: inline;
+    text-align: start;
+    margin: 0;
+}
+
+.todo-text {
+    display: inline-block;
+    flex: 1;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.todo-text-completed {
+    opacity: 0.3;
+    text-decoration: line-through;
+}

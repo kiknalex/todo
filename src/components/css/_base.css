@@ -1,0 +1,61 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background-start: rgb(87, 221, 255);
+  --check-background-end: rgb(192, 88, 243);
+
+  /* Light Theme */
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue-dark: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue-dark: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue-dark: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-darker: hsl(237, 14%, 26%);
+
+  /* background images */
+  --bg-desktop-light: url("E:\Project\todo\src\images\bg-desktop-light.jpg");
+  --bg-mobile-light: url("E:\Project\todo\src\images\bg-mobile-light.jpg");
+
+  --bg-desktop-dark: url("E:\Project\todo\src\images\bg-desktop-dark.jpg");
+  --bg-mobile-dark: url("E:\Project\todo\src\images\bg-mobile-dark.jpg");
+}
+
+:root .light-theme {
+    --very-dark-blue: var(--very-light-gray);
+    --very-dark-desaturated-blue: var(--very-light-grayish-blue);
+    --light-grayish-blue-dark: var(--very-dark-grayish-blue);
+    --light-grayish-blue-hover: var(--dark-grayish-blue);
+    --dark-grayish-blue-dark: var(--very-dark-grayish-blue);
+    --very-dark-grayish-blue-dark: var();
+    --very-dark-grayish-blue-darker: var();
+    
+    --bg-desktop-dark: var(--bg-desktop-light);
+    --bg-mobile-dark: var(--bg-mobile-light);
+  }
+
+body {
+  margin: 10px;
+  background-color: var(--very-dark-blue);
+  font-family: system-ui;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --bg-desktop-light: var(--bg-mobile-light);
+    --bg-desktop-dark: var(--bg-mobile-dark);
+  }
+}

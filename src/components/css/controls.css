@@ -1,0 +1,47 @@
+.controls {
+    font-size: 0.75rem;
+    padding-bottom: 5px;
+    color: var(--dark-grayish-blue-dark);
+    font-weight: 700;
+}
+
+.controls .btn {
+    transition: color 300ms;
+}
+.controls .btn:hover {
+    color: white;
+}
+
+.btn-control-active {
+    color: var(--bright-blue);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "items-left btn-control btn-control btn-control clear-completed-btn";
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.controls-flex {
+    grid-area: btn-control;
+}
+.items-left {
+    grid-area: items-left;
+}
+.btn-clear-completed {
+    grid-area: clear-completed-btn;
+}
+
+
+@media screen and (max-width: 504px) {
+    .grid-container {
+        grid-template-areas: "items-left . . . clear-completed-btn"
+                            "btn-control btn-control btn-control btn-control btn-control";
+                            grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 30px;
+    }
+    
+}

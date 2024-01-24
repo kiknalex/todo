@@ -1,0 +1,13 @@
+#background-img {
+    background-image: linear-gradient(rgba(87 221 255 / 50%), rgba(192 88 243 / 20%)), var(--bg-desktop-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+
