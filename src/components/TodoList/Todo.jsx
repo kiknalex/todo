@@ -22,7 +22,7 @@ export default function Todo(props) {
           } btn-complete-background`}
         >
           <img
-            src="../src/images/icon-check.svg"
+            src="/icon-check.svg"
             className="btn-complete-img"
             width="25"
             height="25"
@@ -40,7 +40,7 @@ export default function Todo(props) {
 
       <Button classes="btn" handleClick={() => props.onDeleteClick(props.id)}>
         <img
-          src="../src/images/icon-cross.svg"
+          src="/icon-cross.svg"
           className="btn-delete"
           width="25"
           height="25"

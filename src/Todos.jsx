@@ -66,7 +66,7 @@ function Todos() {
       <div style={{display: "flex", width: "100%", justifyContent: "space-between"}}>
         <h1>TODO</h1>
         <button className="btn" onClick={() => setDarkMode(() => !darkMode)}>
-          <img src={`src/images/icon-${darkMode ? "sun" : "moon"}.svg`} width="25" height="25" alt={`Set ${darkMode ? "light" : "dark"} mode`} />
+          <img src={`/icon-${darkMode ? "sun" : "moon"}.svg`} width="25" height="25" alt={`Set ${darkMode ? "light" : "dark"} mode`} />
         </button>
       </div>
       </div>

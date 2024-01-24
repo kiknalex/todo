@@ -34,7 +34,7 @@ export default function Create(props) {
       <Button classes="btn btn-complete-circle" handleClick={handleCreateClick}>
         <div className={`btn-create-background`}>
           <img
-            src="../src/images/icon-check.svg"
+            src="/icon-check.svg"
             className="btn-complete-img"
             width="25"
             height="25"
